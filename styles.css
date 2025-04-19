@@ -1,0 +1,158 @@
+body {
+  position: absolute;
+  
+  margin: 0px;
+
+  user-select: none;
+
+  width: 100vw;
+  height: 100vh;
+  
+  background-color: #101010;
+}
+
+canvas {
+  background-color: #202020;
+}
+
+#viewport {
+  position: absolute;
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+
+  top: 0vh;
+  left: 0vw;
+  
+  width: 70vw;
+  height: 100vh;
+
+  background-color: #101010;
+}
+
+#menu {
+  position: absolute;
+  display: block;
+
+  color: #606060;
+  font-family: "Lucida Console", "Courier New", monospace;
+
+  top: 0vh;
+  left: 70vw;
+  
+  width: 30vw;
+  height: 100vh;
+
+  background-color: #202020;
+}
+
+h1 {
+  position: relative;
+  display: flex;
+
+  box-sizing: border-box;
+
+  margin: 0px;
+
+  justify-content: center;
+  align-items: center;
+  
+  text-align: center;
+  font-size: 1.5vw;
+
+  width: 30vw;
+  height: 10vh;
+
+  border-bottom: 2px solid #303030;
+}
+
+form {
+  position: relative;
+  display: block;
+
+  box-sizing: border-box;
+
+  margin: 0px;
+
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+
+  padding-left: 2vw;
+  padding-right: 2vw;
+  
+  font-size: 1.25vw;
+  line-height: 6.5vh;
+
+  width: 30vw;
+  height: 30vh;
+
+  border-bottom: 2px solid #303030;
+}
+
+#point { height: 30vh; }
+
+#settings { 
+  height: calc(23.5vh + 7.5vh); 
+
+  line-height: 9vh;
+}
+
+#route { height: 10.75vh; }
+#points { height: 18.25vh; }
+
+label {
+  white-space: pre;
+}
+
+legend {
+  white-space: pre;
+}
+
+.number {
+  text-align: center;
+  width: 8vw;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    opacity: 1;
+}
+
+.check {
+  position: relative;
+
+  top: 4px;
+  left: -4px;
+  
+  width: 16px;
+  height: 16px;
+}
+
+.text {
+  position: relative;
+  
+  resize: none;
+
+  top: 4px;
+  
+  width: 6.5vw;
+  height: 16px;
+}
+
+a {
+  display: none;
+}
+
+.button1 {
+  font-size: 1.25vw;
+  width: 7vw;
+}
+
+.button2 {
+  font-size: 1.25vw;
+  width: 4.5vw;
+}
+
+.hidden {
+  display: none;
+}
