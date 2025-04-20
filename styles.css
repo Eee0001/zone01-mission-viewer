@@ -139,7 +139,7 @@ input[type=number]::-webkit-inner-spin-button {
   height: 16px;
 }
 
-a {
+.hide {
   display: none;
 }
 
