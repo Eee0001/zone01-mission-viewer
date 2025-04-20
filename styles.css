@@ -67,6 +67,15 @@ h1 {
   border-bottom: 2px solid #303030;
 }
 
+#title {
+  color: #606060;
+  font-family: "Lucida Console", "Courier New", monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
 form {
   position: relative;
   display: block;
