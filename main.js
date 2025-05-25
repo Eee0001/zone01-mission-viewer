@@ -394,7 +394,12 @@ function ExportRoute () {
     const angle1 = i === 0 ? 0 : CalculateAngle(points[i-1], points[i]);
     let angle2 = CalculateAngle(points[i], points[i+1]);
     if (points[i].d === -1) { angle2 = FlipAngle(angle2); }
-    const turn = CalculateTurn(angle1, angle2);
+    let turn = CalculateTurn(angle1, angle2);
+    if (i > 0) {
+      if (points[i-1].d === -1 && points[i].d === 1) {
+        turn *= -1;
+      }
+    }
     const distance = CalculateDistance(points[i], points[i+1]);
     const func = points[i].f;
     const direction = points[i].d;
@@ -587,6 +592,11 @@ function DrawInfo () {
         let angle2 = CalculateAngle(points[i], points[i+1]);
         if (points[i].d === -1) { angle2 = FlipAngle(angle2); }
         let turn = CalculateTurn(angle1, angle2);
+        if (i > 0) {
+          if (points[i-1].d === -1 && points[i].d === 1) {
+            turn *= -1;
+          }
+        }
         ctx.fillStyle = "rgb(0,0,255)";
         ctx.fillText(turn, points[i].x + 36, points[i].y + 12); // turn
       }
