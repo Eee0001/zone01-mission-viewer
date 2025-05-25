@@ -396,7 +396,7 @@ function ExportRoute () {
     if (points[i].d === -1) { angle2 = FlipAngle(angle2); }
     let turn = CalculateTurn(angle1, angle2);
     if (i > 0) {
-      if (points[i-1].d === -1 && points[i].d === 1) {
+      if (points[i-1].d === -1) {
         turn *= -1;
       }
     }
@@ -593,7 +593,7 @@ function DrawInfo () {
         if (points[i].d === -1) { angle2 = FlipAngle(angle2); }
         let turn = CalculateTurn(angle1, angle2);
         if (i > 0) {
-          if (points[i-1].d === -1 && points[i].d === 1) {
+          if (points[i-1].d === -1) {
             turn *= -1;
           }
         }
